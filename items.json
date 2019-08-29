@@ -1,0 +1,44 @@
+{
+    "0":{
+        "type": "self",
+        "name": "Agent运行状态",
+        "data": {}
+    },
+    "1":{
+        "type": "icmp",
+        "name": "Google DNS",
+        "data": {
+            "addr": "8.8.8.8"
+        }
+    },
+    "2":{
+        "type": "tcp",
+        "name": "Google",
+        "data": {
+            "addr": "www.google.com",
+            "port": 443
+        }
+    },
+    "3":{
+        "type": "http",
+        "name": "Bing",
+        "data": {
+            "url": "https://www.bing.com/",
+            "code": 200
+        }
+    },
+    "4":{
+        "type": "process",
+        "name": "Python",
+        "data": {
+            "name": "python"
+        }
+    },
+    "5":{
+        "type": "service",
+        "name": "iptables",
+        "data": {
+            "name": "iptables"
+        }
+    }
+}
