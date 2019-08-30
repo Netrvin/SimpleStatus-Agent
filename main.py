@@ -103,7 +103,7 @@ def check_process(data):
 
 def check_service(data):
     try:
-        result = os.system('service ' + data['data']['name'] + ' status')
+        result = os.system('/usr/sbin/service ' + data['data']['name'] + ' status')
         data['message'] = ''
         data['status'] = ('online' if (result == 0) else 'offline')
         return data
