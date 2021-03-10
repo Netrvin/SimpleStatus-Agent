@@ -114,7 +114,7 @@ def check_service(data):
 
 def post_data(url, data, retry=3):
     try:
-        print(requests.post(url=url, data=data, headers={
+        print(requests.post(url=url, data=data, timeout=5, headers={
               'Content-Type': 'application/x-www-form-urlencoded'}).content)
     except:
         if retry != 0:
